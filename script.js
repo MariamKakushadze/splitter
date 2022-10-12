@@ -17,7 +17,6 @@ customTip.value='';
 personNum.value='';
 }
 
-
 function personVal(){
     let format = /^[1-9]+[0-9]*$/;   
         if(!personNum.value.match(format)){
@@ -39,10 +38,20 @@ function personVal(){
         return true;
     }
  }
+ function tipVal(){
+    let format=/^(?!0*[.,]0*$|[.,]0*$|0*$)\d+[,.]?\d{0,2}$/;
+    if(!customTip.value.match(format)){
+        customTip.style.border = "2px solid red";
+        return false;
+    }else{
+        customTip.style.border = "none";
+        return true;
+    }
+ }
 
 
  function calculateTip(){
-    if(bill.value>0 && personNum.value>0){
+    if(bill.value>0 && personNum.value>0 && customTip.value>0){
   const percent=customTip.value/100*bill.value;
   const total=Number(bill.value)+percent;
   const personTip=(percent/personNum.value).toFixed(2);
@@ -53,12 +62,14 @@ function personVal(){
  }
  personVal();
  decimalVal();
+ tipVal();
 }
 
 
  for(let i=0; i<tip.length; i++){
     tip[i].addEventListener('click',function(){
     if(bill.value>0 && personNum.value>0){
+        customTip.style.border = "none";
   const percent= tip[i].value/100*bill.value;
   const total=Number(bill.value)+percent;
   const personTip=(percent/personNum.value).toFixed(2);
