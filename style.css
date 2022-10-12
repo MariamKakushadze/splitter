@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background:#C5E4E7;
+}
+.container{
+    max-width:500px;
+}
+h1{
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  text-align: center;
+  font-size: 24px;
+  padding:40px 0 35px 0;
+  color:#3D6666;
+  letter-spacing: 0.5rem;;
+}
+.small-txt{
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+.mid-txt{
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+.large-txt{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 47px;
+    text-align: right;
+    letter-spacing: -0.666667px;
+    color: #26C2AE;
+}
+.splitter{
+    background-color: #fff;
+    padding: 32px;
+    box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+    border-radius: 25px 25px 0px 0px;  
+}
+.label{
+    color: #5E7A7D;
+    margin-left:0;
+    width:100%;
+    padding-bottom: 6px;
+}
+.bill{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+}
+.dollar-sign{
+    position: absolute;
+    left:16px;
+    top:45px;
+}
+#bill, #people{
+    width:100%;
+    background: #F3F9FA;
+    border-radius: 5px;
+    border-style: none;
+    height: 3rem;
+    text-align: right;
+    padding: 0 16px;
+    color: #00474B; 
+}
+.select-tip{
+    margin-top: 32px;
+    display:flex;
+    flex-wrap: wrap;
+    gap:16px;
+    justify-content: space-between;
+}
+
+.tip-btn{
+    margin:0;
+    border-style: none;
+    background: #00474B;
+    border-radius: 5px;
+    text-align: center;
+    color: #FFFFFF;
+    width:50%;
+    max-width:147px;
+    padding:6px 0;
+}
+.custom-tip{
+    margin:0;
+    border-style:unset;
+    background: #F3F9FA;
+    border:none;
+    border-radius: 5px;
+    padding: 0 16px;
+    text-align: right;
+    color: #00474B; 
+    max-width:147px;
+}
+#bill:focus, .custom-tip:focus, #people:focus{
+    outline:  2px solid #26C2AE;
+}
+.people{
+    margin-top: 32px;
+    position: relative;
+}
+.person-sign{
+    position: absolute;
+    left:16px;
+    top:40px;
+}
+.amount-container{
+    margin-top:32px;
+    background: #00474B;
+    border-radius: 15px;
+    padding:24px;
+}
+.amount{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+}
+.amount-p{
+    color:#fff;
+    margin:0;
+}
+.amount-span{
+    font-size: 13px;
+    line-height: 19px;
+    color: #7F9D9F;
+}
+.result{
+    margin:0;
+}
+.tip{
+    margin-top: 13px;
+}
+.total{
+    margin-top:22px;
+}
+.reset{
+    margin-top: 32px;
+    background: #26C2AE;
+    border-radius: 5px;
+    width:100%;
+    border-style: none;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #00474B;
+    padding:9px 0;
+}
+button,input{
+    cursor: pointer;
+}
+button:hover{
+    background: #9FE8DF;
+}
+@media only screen and (min-width: 1400px) {
+
+ .splitter{
+    width:920px;
+    border-radius: 25px;
+    display:grid;
+    grid-template-columns: auto auto;
+    gap:48px;
+}
+ .container{
+    width:390px;;
+    margin:0;
+    margin-right: 0 !important;
+ }
+ .tip-btn{
+    width:117px;
+ }
+ .custom-tip{
+    max-width:117px;
+    text-align: center;
+    padding: 0;
+ }
+ .large-txt{
+    font-size: 48px;
+    line-height: 71px;
+    text-align: right;
+    letter-spacing: -1px;
+ }
+ .amount-container{
+    margin-top: 0;
+    padding:40px;
+ }
+.reset{
+    margin-top: 100px;
+}
+h1{
+    padding:160px 0 86px 0; 
+}
+
+}

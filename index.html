@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+</head>
+<body>
+ <header>
+  <h1>SPLI<br>TTER</h1>
+ </header>
+ <main class="splitter">
+  <div class='container'>
+   <div class="bill">
+     <label class="label small-txt" for="bill" name="bill">Bill</label>
+     <img src="./images/icon-dollar.svg" alt="dollar-sign" class="dollar-sign">
+     <input type="number" class='mid-txt' id="bill" placeholder="0">
+    </div>
+    <div class="select-tip">
+      <p class="label small-txt">Select Tip %</p>
+      <button class="tip-btn mid-txt">5%</button>
+      <button class="tip-btn mid-txt">10%</button>
+      <button class="tip-btn mid-txt">15%</button>
+      <button class="tip-btn mid-txt">25%</button>
+      <button class="tip-btn mid-txt">50%</button>
+      <input type="number" class="custom-tip mid-txt" placeholder="Custom">
+    </div>
+    <div class="people">
+      <label class="label small-txt" for="people" name="people">Number of People</label>
+      <img src="./images/icon-person.svg" alt="person-sign" class="person-sign">
+      <input type="number"  class='mid-txt' id="people" placeholder="0">
+    </div>
+ </div>
+ <div class="container">
+  <div class="amount-container">
+    <div class="tip amount">
+      <p class="amount-p small-txt">Tip Amount<br><span class='amount-span'>/ person</span></p>
+      <p class="final-tip result large-txt">$0.00</p>
+    </div>
+    <div class="total amount">
+      <p class="amount-p small-txt">Total<br><span class='amount-span'>/ person</span></p>
+      <p class="final-total result large-txt">$0.00</p>
+    </div>
+    <button type="reset" class="reset">RESET</button>
+  </div>
+ </div>
+</main>
+</body>
+</html>
