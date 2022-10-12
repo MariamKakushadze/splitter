@@ -15,21 +15,21 @@
   <div class='container'>
    <div class="bill">
      <label class="label small-txt" for="bill" name="bill">Bill</label>
-     <img src="./images/icon-dollar.svg" alt="dollar-sign" class="dollar-sign">
-     <input type="number" class='mid-txt' id="bill" placeholder="0">
+     <img src="images/icon-dollar.svg" alt="dollar-sign" class="dollar-sign">
+     <input type="number" class='mid-txt error' id="bill" value="0" placeholder="0">
     </div>
     <div class="select-tip">
       <p class="label small-txt">Select Tip %</p>
-      <button class="tip-btn mid-txt">5%</button>
-      <button class="tip-btn mid-txt">10%</button>
-      <button class="tip-btn mid-txt">15%</button>
-      <button class="tip-btn mid-txt">25%</button>
-      <button class="tip-btn mid-txt">50%</button>
+      <button class="tip-btn mid-txt" value="5">5%</button>
+      <button class="tip-btn mid-txt" value="10">10%</button>
+      <button class="tip-btn mid-txt" value="15">15%</button>
+      <button class="tip-btn mid-txt" value="25">25%</button>
+      <button class="tip-btn mid-txt" value="50">50%</button>
       <input type="number" class="custom-tip mid-txt" placeholder="Custom">
     </div>
     <div class="people">
       <label class="label small-txt" for="people" name="people">Number of People</label>
-      <img src="./images/icon-person.svg" alt="person-sign" class="person-sign">
+      <img src="images/icon-person.svg" alt="person-sign" class="person-sign">
       <input type="number"  class='mid-txt' id="people" placeholder="0">
     </div>
  </div>
@@ -47,5 +47,6 @@
   </div>
  </div>
 </main>
+<script src="script.js"></script>
 </body>
 </html>
