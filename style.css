@@ -96,6 +96,9 @@ h1{
     max-width:147px;
     padding:6px 0;
 }
+.tip-btn:focus{
+    background: #26C2AE;
+   }
 .custom-tip{
     margin:0;
     border-style:unset;
