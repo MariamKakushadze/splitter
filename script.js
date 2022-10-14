@@ -23,7 +23,7 @@ customTip.style.border = "none";
 
 personNum.addEventListener('input', function(){
   if (personNum.value%1!=0){
-    personNum.value=Math.round(personNum.value);
+    personNum.value=Math.floor(personNum.value);
     error.style.display="none";
     personNum.style.border = "none";
   }else if(personNum.value==0){
