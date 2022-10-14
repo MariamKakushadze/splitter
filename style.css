@@ -74,7 +74,7 @@ h1{
     border-style: none;
     height: 3rem;
     text-align: right;
-    padding: 0 16px;
+    padding: 0 16px 0 36px;
     color: #00474B; 
 }
 .select-tip{
@@ -121,6 +121,12 @@ h1{
     position: absolute;
     left:16px;
     top:40px;
+}
+.error-msg{
+    color:red;
+    position: absolute;
+    left:70%;
+    display: none;
 }
 .amount-container{
     margin-top:32px;
